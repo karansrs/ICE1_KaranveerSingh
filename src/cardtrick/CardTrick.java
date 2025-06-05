@@ -30,8 +30,8 @@ public class CardTrick {
 
         
        Card luckyCard = new Card();
-luckyCard.setValue(10); // For example, 10
-luckyCard.setSuit("Hearts"); // For example, Hearts
+luckyCard.setValue(10); 
+luckyCard.setSuit("Hearts"); 
 
 boolean found = false;
 for (Card card : magicHand) {
