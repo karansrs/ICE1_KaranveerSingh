@@ -20,7 +20,7 @@ public class CardTrick {
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
 
-        // Fill magicHand with random cards
+      
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             c.setValue((int)(Math.random() * 13 + 1)); // 1 to 13
@@ -28,7 +28,7 @@ public class CardTrick {
             magicHand[i] = c;
         }
 
-        // Ask user to pick a card
+        
         Scanner input = new Scanner(System.in);
         System.out.print("Enter card value (1 to 13): ");
         int userValue = input.nextInt();
