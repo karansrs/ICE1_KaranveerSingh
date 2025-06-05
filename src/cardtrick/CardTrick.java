@@ -29,25 +29,23 @@ public class CardTrick {
         }
 
         
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter card value (1 to 13): ");
-        int userValue = input.nextInt();
-        input.nextLine(); // consume newline
-        System.out.print("Enter card suit (Hearts, Diamonds, Spades, Clubs): ");
-        String userSuit = input.nextLine();
+       Card luckyCard = new Card();
+luckyCard.setValue(10); // For example, 10
+luckyCard.setSuit("Hearts"); // For example, Hearts
 
-        boolean found = false;
-        for (Card card : magicHand) {
-            if (card.getValue() == userValue && card.getSuit().equalsIgnoreCase(userSuit)) {
-                found = true;
-                break;
-            }
-        }
+boolean found = false;
+for (Card card : magicHand) {
+    if (card.getValue() == luckyCard.getValue() && card.getSuit().equalsIgnoreCase(luckyCard.getSuit())) {
+        found = true;
+        break;
+    }
+}
 
-        if (found) {
-            System.out.println("You picked the right card! It's in the magic hand.");
-        } else {
-            System.out.println("Sorry, your card is not in the magic hand.");
-        }
+if (found) {
+    System.out.println("Congratulations! Your lucky card was found in the magic hand!");
+} else {
+    System.out.println("Better luck next time. Lucky card not found.");
+}
+
     }
 }
