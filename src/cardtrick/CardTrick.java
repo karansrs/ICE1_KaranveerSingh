@@ -13,7 +13,7 @@ import java.util.Scanner;
  * 
  * Modified by: Karanveer Singh
  * Student ID: 991775060
- * Date: June 6, 2025
+ * Date: June 11, 2025
  */
 public class CardTrick {
 
